@@ -6,6 +6,7 @@ import consola from 'consola';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import NotFoundPage from './pages/NotFound';
 import HomePage from './pages/HomePage';
+import Impressum from './pages/Impressum';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement,
@@ -15,6 +16,7 @@ root.render(
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<HomePage />} />
+        <Route path='/impressum' element={<Impressum />} />
         <Route path={'*'} element={<NotFoundPage />} />
       </Routes>
     </BrowserRouter>
