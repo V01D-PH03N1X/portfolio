@@ -2,34 +2,13 @@ import React, { ReactElement, useEffect } from 'react';
 import { motion, useInView } from 'framer-motion';
 import NavBar from '../../compontents/NavBar';
 import styles from './HomePage.module.sass';
+import Wave from '../../compontents/Wave';
 
 export default function HomePage(): ReactElement {
-  const ref = React.useRef(null);
-  const isInView = useInView(ref, { once: true });
-
-  useEffect(() => {
-    console.log(isInView);
-  }, [isInView]);
-
   return (
     <>
-      <motion.div
-        variants={{
-          hidden: { opacity: 0 },
-          visible: { opacity: 1 },
-        }}
-        initial='hidden'
-        animate='visible'
-        transition={{ duration: 1, delay: 1.25, ease: 'circInOut' }}>
-        <div className='wave'></div>
-        <div className='wave'></div>
-        <div className='wave'></div>
-        <div className='wave'></div>
-        <div className='wave'></div>
-      </motion.div>
       <NavBar />
       <motion.div
-        ref={ref}
         variants={{
           hidden: { opacity: 0 },
           visible: { opacity: 1 },
@@ -53,6 +32,7 @@ export default function HomePage(): ReactElement {
           </p>
         </div>
       </motion.div>
+      <Wave />
     </>
   );
 }

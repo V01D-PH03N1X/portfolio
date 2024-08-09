@@ -2,12 +2,13 @@ import React from 'react';
 import NavBar from '../../compontents/NavBar';
 import { motion } from 'framer-motion';
 import styles from './Impressum.module.sass';
+import Wave from '../../compontents/Wave';
 
 export default function Impressum() {
   return (
     <>
       <NavBar />
-
+      <Wave />
       <motion.div
         variants={{
           hidden: { opacity: 0 },
@@ -120,12 +121,6 @@ export default function Impressum() {
         </p>
         <br />
       </motion.div>
-      <div className={styles.sticky}>
-        <div className='wave' />
-        <div className='wave' />
-        <div className='wave' />
-        <div className='wave' />
-      </div>
     </>
   );
 }
