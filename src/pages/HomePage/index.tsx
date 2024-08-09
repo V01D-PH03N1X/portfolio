@@ -8,6 +8,7 @@ export default function HomePage(): ReactElement {
   return (
     <>
       <NavBar />
+      <Wave />
       <motion.div
         variants={{
           hidden: { opacity: 0 },
@@ -32,7 +33,6 @@ export default function HomePage(): ReactElement {
           </p>
         </div>
       </motion.div>
-      <Wave />
     </>
   );
 }

@@ -5,7 +5,7 @@ import styles from './Wave.module.sass';
 export default function Wave() {
   return (
     <motion.div
-    className={styles.sticky}
+      className={styles.sticky}
       variants={{
         hidden: { opacity: 0 },
         visible: { opacity: 1 },
