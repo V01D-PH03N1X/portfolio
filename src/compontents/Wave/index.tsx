@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { ReactElement } from 'react';
 import { motion } from 'framer-motion';
 import styles from './Wave.module.sass';
 
-export default function Wave() {
+export function Wave() {
   return (
     <motion.div
       className={styles.sticky}
@@ -20,4 +20,8 @@ export default function Wave() {
       <div className={styles.wave}></div>
     </motion.div>
   );
+}
+
+export function WaveSpacer(): ReactElement {
+  return <div className={styles.waveSpacer}></div>;
 }

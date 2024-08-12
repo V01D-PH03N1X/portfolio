@@ -8,7 +8,7 @@ import NotFoundPage from './pages/NotFoundPage';
 import HomePage from './pages/HomePage';
 import Impressum from './pages/ImpressumPage';
 import AboutPage from './pages/AboutPage';
-import ProjectsPage from "./pages/ProjectsPage";
+import ProjectsPage from './pages/ProjectsPage';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement,

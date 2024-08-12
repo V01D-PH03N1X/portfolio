@@ -1,6 +1,6 @@
 import React, { ReactElement } from 'react';
 import { motion } from 'framer-motion';
-import Wave from '../../compontents/Wave';
+import { Wave, WaveSpacer } from '../../compontents/Wave';
 import styles from './NotFound.module.sass';
 
 export default function NotFoundPage(): ReactElement {
@@ -14,6 +14,7 @@ export default function NotFoundPage(): ReactElement {
           Um zur Startseite zurückzukehren, drücken Sie <a href={'/'}>Hier</a>
         </h3>
       </motion.div>
+      <WaveSpacer />
     </>
   );
 }

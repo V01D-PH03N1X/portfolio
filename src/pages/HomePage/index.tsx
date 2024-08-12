@@ -2,7 +2,7 @@ import React, { ReactElement } from 'react';
 import { motion } from 'framer-motion';
 import NavBar from '../../compontents/NavBar';
 import styles from './HomePage.module.sass';
-import Wave from '../../compontents/Wave';
+import { Wave, WaveSpacer } from '../../compontents/Wave';
 
 export default function HomePage(): ReactElement {
   return (
@@ -33,6 +33,7 @@ export default function HomePage(): ReactElement {
           </p>
         </div>
       </motion.div>
+      <WaveSpacer />
     </>
   );
 }

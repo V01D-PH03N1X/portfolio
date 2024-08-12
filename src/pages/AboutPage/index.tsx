@@ -1,7 +1,7 @@
 import React, { ReactElement } from 'react';
 import styles from './About.module.sass';
 import { motion } from 'framer-motion';
-import Wave from '../../compontents/Wave';
+import { Wave, WaveSpacer } from '../../compontents/Wave';
 import NavBar from '../../compontents/NavBar';
 
 export default function AboutPage(): ReactElement {
@@ -30,6 +30,7 @@ export default function AboutPage(): ReactElement {
          * Do it Eventually in a CardHolder and Cards
          */}
       </div>
+      <WaveSpacer />
     </>
   );
 }

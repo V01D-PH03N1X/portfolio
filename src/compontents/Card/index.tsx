@@ -27,7 +27,11 @@ export function Card(props: CardContent): ReactElement {
         <h1>{props.title}</h1>
         <h2>{props.subtitle}</h2>
         <p>{props.content}</p>
-          <p><a className={styles.cardLink} href={props.url}>Mehr Information</a></p>
+        <p>
+          <a className={styles.cardLink} href={props.url}>
+            Mehr Information
+          </a>
+        </p>
       </div>
     </>
   );
