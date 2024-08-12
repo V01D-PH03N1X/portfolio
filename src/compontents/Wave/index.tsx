@@ -12,7 +12,7 @@ export default function Wave() {
       }}
       initial='hidden'
       animate='visible'
-      transition={{ duration: 1, delay: 1.25, ease: 'circInOut' }}>
+      transition={{ duration: 1, delay: 0.75, ease: 'circInOut' }}>
       <div className={styles.wave}></div>
       <div className={styles.wave}></div>
       <div className={styles.wave}></div>

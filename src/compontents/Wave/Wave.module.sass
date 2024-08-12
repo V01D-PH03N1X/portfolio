@@ -4,9 +4,9 @@ $wave-height: 11em
   background: linear-gradient(90deg, rgba(123, 209, 255, 0.15) 25%, rgba(147, 123, 255, 0.15) 50%, rgba(255, 123, 233, 0.15) 75%, rgba(255, 123, 123, 0.15) 100%)
   border-radius: 1000% 1000% 0 0
   position: fixed
-  width: 300vw
+  width: 200%
   height: $wave-height
-  animation: wave 10s -1s linear infinite
+  animation: wave 20s -1s linear infinite
   transform: translate3d(0, 0, 0)
   opacity: 0.8
   bottom: 0
@@ -16,22 +16,22 @@ $wave-height: 11em
 
 .wave:nth-of-type(2)
   bottom: -1.25em
-  animation: wave 18s linear reverse infinite
+  animation: wave 22s linear normal infinite
   opacity: 0.7
 
 .wave:nth-of-type(3)
   bottom: -2.5em
-  animation: wave 20s -1s reverse infinite
+  animation: wave 24s -1s reverse infinite
   opacity: 0.9
 
 .wave:nth-of-type(4)
   bottom: -3.75em
-  animation: wave 22s -1s reverse infinite
+  animation: wave 26s -1s normal infinite
   opacity: 0.8
 
 .wave:nth-of-type()
   bottom: -4em
-  animation: wave 24s -1s reverse infinite
+  animation: wave 28s -1s reverse infinite
   opacity: 0.9
 
 @keyframes wave
@@ -44,19 +44,18 @@ $wave-height: 11em
 
   50%
     transform: translateX(-50%)
-    box-shadow: #d4d4d4 -50px -3px 13px
 
   75%
     transform: translateX(-25%)
 
   100%
     transform: translateX(-2%)
-    box-shadow: #f4f4f4 -25px -3px 7px
+    box-shadow: #fefefe -25px -3px 7px
 
 .sticky
   position: fixed
   bottom: 0
-  width: 300vw
+  width: 200%
   height: $wave-height
   z-index: 100
   background-color: #2e2e2e

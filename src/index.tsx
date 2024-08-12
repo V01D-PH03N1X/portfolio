@@ -4,9 +4,11 @@ import './index.sass';
 import reportWebVitals from './reportWebVitals';
 import consola from 'consola';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import NotFoundPage from './pages/NotFound';
+import NotFoundPage from './pages/NotFoundPage';
 import HomePage from './pages/HomePage';
-import Impressum from './pages/Impressum';
+import Impressum from './pages/ImpressumPage';
+import AboutPage from './pages/AboutPage';
+import ProjectsPage from "./pages/ProjectsPage";
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement,
@@ -17,6 +19,8 @@ root.render(
       <Routes>
         <Route path='/' element={<HomePage />} />
         <Route path='/impressum' element={<Impressum />} />
+        <Route path='/about' element={<AboutPage />} />
+        <Route path='/projects' element={<ProjectsPage />} />
         <Route path={'*'} element={<NotFoundPage />} />
       </Routes>
     </BrowserRouter>

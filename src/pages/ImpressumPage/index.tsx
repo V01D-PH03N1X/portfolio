@@ -1,7 +1,7 @@
 import React from 'react';
 import NavBar from '../../compontents/NavBar';
 import { motion } from 'framer-motion';
-import styles from './Impressum.module.sass';
+import styles from './ImpressumPage.module.sass';
 import Wave from '../../compontents/Wave';
 
 export default function Impressum() {
@@ -16,7 +16,7 @@ export default function Impressum() {
         }}
         initial='hidden'
         animate='visible'
-        transition={{ duration: 1, delay: 1.25, ease: 'circInOut' }}
+        transition={{ duration: 1, delay: 0.75, ease: 'circInOut' }}
         className={styles.impressum}>
         <h1>Impressum</h1>
         <p>Angaben gemäß § 5 DDG</p>

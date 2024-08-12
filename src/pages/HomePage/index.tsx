@@ -1,5 +1,5 @@
-import React, { ReactElement, useEffect } from 'react';
-import { motion, useInView } from 'framer-motion';
+import React, { ReactElement } from 'react';
+import { motion } from 'framer-motion';
 import NavBar from '../../compontents/NavBar';
 import styles from './HomePage.module.sass';
 import Wave from '../../compontents/Wave';
@@ -16,7 +16,7 @@ export default function HomePage(): ReactElement {
         }}
         initial='hidden'
         animate='visible'
-        transition={{ duration: 1, delay: 1.25, ease: 'circInOut' }}>
+        transition={{ duration: 1, delay: 0.75, ease: 'circInOut' }}>
         <h2 className={styles.heading}>Hi, Ich bin Sebastian Schindler,</h2>
         <div className={styles.container}>
           <p>

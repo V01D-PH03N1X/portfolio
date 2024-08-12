@@ -6,7 +6,7 @@ import styles from './NavBar.module.sass';
 export default function NavBar(): ReactElement {
   const entries = new Map<string, string>([
     ['Home', '/'],
-    ['About', '/about'],
+    // ['About', '/about'],
     ['Projects', '/projects'],
     ['Impressum', '/impressum'],
   ]);
@@ -19,7 +19,12 @@ export default function NavBar(): ReactElement {
           className={styles.navlink}
           key={key}
           href={value}
-          whileHover={{ scale: 1.3, color: '#83c6d3' }}
+          whileHover={{
+            scale: 1.3,
+            color: '#83c6d3',
+            backgroundColor: '#222222',
+            borderRadius: '14px',
+          }}
           whileTap={{ scale: 0.9, color: '#83c6d3' }}>
           {key}
         </motion.a>,
@@ -37,7 +42,7 @@ export default function NavBar(): ReactElement {
         }}
         initial='hidden'
         animate='visible'
-        transition={{ duration: 1, delay: 1, easings: 'inOut' }}
+        transition={{ duration: 1, delay: 0.75, easings: 'inOut' }}
         className={styles.navbar}>
         {createLinks()}
       </motion.div>
