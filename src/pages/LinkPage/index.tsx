@@ -3,8 +3,9 @@ import styles from './About.module.sass';
 import { motion } from 'framer-motion';
 import { Wave, WaveSpacer } from '../../compontents/Wave';
 import NavBar from '../../compontents/NavBar';
+import { LinkCard, LinkCardHolder } from '../../compontents/Card';
 
-export default function AboutPage(): ReactElement {
+export default function LinkPage(): ReactElement {
   return (
     <>
       <Wave />
@@ -20,15 +21,19 @@ export default function AboutPage(): ReactElement {
           transition={{ duration: 1, delay: 0.75, easings: 'inOut' }}>
           <h2 className={styles.title}>Hey, ich bin Sebastian Schindler!</h2>
           <h3 className={styles.subtitle}>
-            Ich bin Fachinformatiker in Anwendungsentwicklung!
+            Hier sind einige Social Media Links, etc. von mir zu finden.
           </h3>
+          <LinkCardHolder>
+            <LinkCard
+              url='https://github.com/V01D-PH03N1X'
+              title='My Github Profile'
+            />
+            <LinkCard
+              url='https://instagram.com/darkbastiplays'
+              title='My Instagram Profile'
+            />
+          </LinkCardHolder>
         </motion.div>
-        {/**
-         * Add Content here
-         * Add About Content here
-         * Something like Age, Location, Education, Skills, Hobbies, etc.
-         * Do it Eventually in a CardHolder and Cards
-         */}
       </div>
       <WaveSpacer />
     </>

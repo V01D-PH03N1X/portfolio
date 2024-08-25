@@ -8,6 +8,11 @@ interface CardContent {
   content?: string;
   url?: string;
 }
+interface LinkCardContent {
+  title?: string;
+  url?: string;
+}
+
 type Props = {
   children: string | ReactElement | ReactElement[];
 };
@@ -30,6 +35,28 @@ export function Card(props: CardContent): ReactElement {
         <p>
           <a className={styles.cardLink} href={props.url}>
             Mehr Information
+          </a>
+        </p>
+      </div>
+    </>
+  );
+}
+
+export function LinkCardHolder({ children }: Props): ReactElement {
+  return (
+    <>
+      <div className={styles.linkCardHolder}>{children}</div>
+    </>
+  );
+}
+
+export function LinkCard(props: LinkCardContent): ReactElement {
+  return (
+    <>
+      <div className={styles.linkCard}>
+        <p>
+          <a className={styles.linkTitle} href={props.url}>
+            {props.title}
           </a>
         </p>
       </div>

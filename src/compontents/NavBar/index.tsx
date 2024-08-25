@@ -6,7 +6,7 @@ import styles from './NavBar.module.sass';
 export default function NavBar(): ReactElement {
   const entries = new Map<string, string>([
     ['Home', '/'],
-    // ['About', '/about'],
+    ['Socials', '/links'],
     ['Projects', '/projects'],
     ['Impressum', '/impressum'],
   ]);
@@ -22,8 +22,7 @@ export default function NavBar(): ReactElement {
           whileHover={{
             scale: 1.3,
             color: '#83c6d3',
-            backgroundColor: '#222222',
-            borderRadius: '14px',
+            textShadow: '0px 0px 6px #83c6d3',
           }}
           whileTap={{ scale: 0.9, color: '#83c6d3' }}>
           {key}

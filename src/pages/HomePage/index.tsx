@@ -16,20 +16,35 @@ export default function HomePage(): ReactElement {
         }}
         initial='hidden'
         animate='visible'
-        transition={{ duration: 1, delay: 0.75, ease: 'circInOut' }}>
+        transition={{ duration: 1, delay: 0.75, ease: 'circInOut' }}
+        style={{
+          display: 'flex',
+          alignItems: 'center',
+          flexDirection: 'column',
+        }}>
         <h2 className={styles.heading}>Hi, Ich bin Sebastian Schindler,</h2>
         <div className={styles.container}>
           <p>
-            Als angehender Fullstack-Entwickler aus Chemnitz, geboren in Hof
-            (Saale), bin ich ein 21-jähriger IT-Enthusiast mit einem soliden
-            Ausbildungshintergrund. Im Jahr 2022 habe ich erfolgreich meine
-            Ausbildung zum technischen Assistenten in Informatik abgeschlossen.
-            Im Anschluss daran begann ich eine verkürzte Ausbildung zum
-            Fachinformatiker für Anwendungsentwicklung. Leider wirde diese
-            Ausbildung im März 2024 aus gesundheitlichen Gründen vorzeitig
-            beendet. Seitdem nutze ich die Zeit, um mich privat weiterzubilden
-            und an eigenen Projekten zu arbeiten, um meine Fähigkeiten und
-            Kenntnisse kontinuierlich zu erweitern.
+            ich bin 21 Jahre alt und habe meine Ausbildung zum Technischen
+            Assistenten für Informatik erfolgreich abgeschlossen. Programmieren
+            ist meine Leidenschaft, und ich konnte bereits wertvolle Erfahrungen
+            in der Entwicklung von Desktop-, Web- und Serveranwendungen sammeln.
+            Zu meinen Stärken gehören Kenntnisse in der Programmierung mit Java,
+            C#, C++, JavaScript und TypeScript.
+          </p>
+          <p>
+            Im Bereich der Webentwicklung arbeite ich mit React und erweitere
+            derzeit mein Wissen in Angular. Bei Serveranwendungen setze ich auf
+            Java mit Spring Boot. Meine große Neugier treibt mich dazu, ständig
+            neue Technologien und Frameworks zu entdecken und anzuwenden. Ich
+            bin stets auf der Suche nach spannenden Herausforderungen und
+            Projekten, um mein Wissen weiter auszubauen.
+          </p>
+          <p>
+            Zudem bin ich eine zuverlässige und verantwortungsbewusste Person,
+            die gerne in einem hilfsbereiten und motivierten Team arbeitet.
+            Zusammenarbeit und gegenseitige Unterstützung stehen für mich im
+            Vordergrund.
           </p>
         </div>
       </motion.div>

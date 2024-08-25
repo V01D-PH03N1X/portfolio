@@ -1,9 +1,8 @@
 import React, { ReactElement } from 'react';
-import { motion } from 'framer-motion';
-import styles from './ProjectsPage.module.sass';
+// import { motion } from 'framer-motion';
+// import styles from './ProjectsPage.module.sass';
 import { Wave, WaveSpacer } from '../../compontents/Wave';
 import NavBar from '../../compontents/NavBar';
-import { Card, CardHolder } from '../../compontents/Card';
 
 export default function ProjectsPage(): ReactElement {
   return (

@@ -7,7 +7,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import NotFoundPage from './pages/NotFoundPage';
 import HomePage from './pages/HomePage';
 import Impressum from './pages/ImpressumPage';
-import AboutPage from './pages/AboutPage';
+import LinkPage from './pages/LinkPage';
 import ProjectsPage from './pages/ProjectsPage';
 
 const root = ReactDOM.createRoot(
@@ -19,7 +19,7 @@ root.render(
       <Routes>
         <Route path='/' element={<HomePage />} />
         <Route path='/impressum' element={<Impressum />} />
-        <Route path='/about' element={<AboutPage />} />
+        <Route path='/links' element={<LinkPage />} />
         <Route path='/projects' element={<ProjectsPage />} />
         <Route path={'*'} element={<NotFoundPage />} />
       </Routes>
