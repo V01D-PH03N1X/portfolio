@@ -6,6 +6,7 @@ interface CardContent {
   title?: string;
   subtitle?: string;
   content?: string;
+  urltitle?: string;
   url?: string;
 }
 interface LinkCardContent {
@@ -34,7 +35,7 @@ export function Card(props: CardContent): ReactElement {
         <p>{props.content}</p>
         <p>
           <a className={styles.cardLink} href={props.url}>
-            Mehr Information
+            {props.urltitle ? props.urltitle : 'Mehr Informationen'}
           </a>
         </p>
       </div>

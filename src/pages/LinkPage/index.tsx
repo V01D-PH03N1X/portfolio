@@ -1,14 +1,12 @@
 import React, { ReactElement } from 'react';
 import styles from './About.module.sass';
 import { motion } from 'framer-motion';
-import { Wave, WaveSpacer } from '../../compontents/Wave';
 import NavBar from '../../compontents/NavBar';
 import { LinkCard, LinkCardHolder } from '../../compontents/Card';
 
 export default function LinkPage(): ReactElement {
   return (
     <>
-      <Wave />
       <NavBar />
       <div className={styles.container}>
         <motion.div
@@ -35,7 +33,6 @@ export default function LinkPage(): ReactElement {
           </LinkCardHolder>
         </motion.div>
       </div>
-      <WaveSpacer />
     </>
   );
 }
