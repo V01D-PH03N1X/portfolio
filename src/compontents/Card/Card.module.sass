@@ -4,9 +4,12 @@ $underlineAnim: text-decoration 0.5s ease
   height: auto
   margin: 2rem
   display: flex
-  align-items: stretch
+  align-items: center
   justify-content: space-evenly
   flex-direction: row
+
+  @media (max-width: 768px)
+    flex-direction: column
 
 .linkCardHolder
   display: flex
@@ -15,16 +18,19 @@ $underlineAnim: text-decoration 0.5s ease
   flex-direction: column
 
 .card
+  height: auto
+  flex: 1 1 100%
+  max-width: 18em
+  margin: 1em
   background: #090909
   padding: 0.75rem
   color: #f5f5f5
-  flex: 1 1 12em
-  width: 12em
-  margin: 1em
   border-radius: 15px
   display: flex
   flex-direction: column
   justify-content: space-between
+  min-height: 15em
+  align-items: stretch
   box-shadow: none
   transition: box-shadow 1s ease-in
   &>p
@@ -34,19 +40,18 @@ $underlineAnim: text-decoration 0.5s ease
     transition: box-shadow 0.25s ease-in
 
 .linkCard
-    background-color: #f1f1f1
-    box-shadow: #f2f2f2 2px 2px 15px
-    padding: 0.75rem
-    color: black
-    flex: 1 1 auto
-    width: 12em
-    margin: 0.75em
-    border-radius: 15px
-    &>p
-        color: black
+  flex: 1 1 100%
+  max-width: 14em
+  background-color: #f1f1f1
+  box-shadow: #f2f2f2 2px 2px 15px
+  padding: 0.75rem
+  color: black
+  margin: 0.75em
+  border-radius: 15px
+  &>p
+      color: black
 
 .cardLink
-  position: relative
   color: deepskyblue
   font-size: 18px
   font-weight: 400

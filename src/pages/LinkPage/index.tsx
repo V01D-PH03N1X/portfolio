@@ -3,6 +3,7 @@ import styles from './About.module.sass';
 import { motion } from 'framer-motion';
 import NavBar from '../../compontents/NavBar';
 import { LinkCard, LinkCardHolder } from '../../compontents/Card';
+import { Wave, WaveSpacer } from '../../compontents/Wave';
 
 export default function LinkPage(): ReactElement {
   return (
